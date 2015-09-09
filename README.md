@@ -3,7 +3,9 @@ http://www.lobaro.com
 
 # Usage:
 a) Install https://launchpad.net/gcc-arm-embedded toolchain
+
 b) on windows: Install CooCox IDE 1.7.8
+
 c) on windows: Open Project File
 
 # (!)Please note(!):
