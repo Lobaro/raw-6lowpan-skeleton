@@ -1,7 +1,16 @@
-# Lobaro.com 6LoWPAN RAW SDK Skeleton Project 
+# 6LoWPAN RAW SDK Skeleton Project 
+http://www.lobaro.com
 
-(!)Please note(!):
+# Usage:
+a) Install https://launchpad.net/gcc-arm-embedded toolchain
+
+b) on windows: Install CooCox IDE 1.7.8
+
+c) on windows: Open Project File
+
+# (!)Please note(!):
 This SDK is intended for experienced embedded programmers!
+
 Please visit "http://www.lobaro.com" for complete solutions based on the
 "constrained application protocol" (CoAP). These solutions are much easier
 to use because minimal to zero knowledge of embedded device programming is needed.
