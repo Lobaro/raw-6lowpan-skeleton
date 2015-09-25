@@ -23,7 +23,9 @@
  *****************************************************************************/
 #include "../ext_libs/lobaro_hal_ext.h"
 
-char buf[500];
+void uart_puts (char *s);
+
+ char buf[500];
 ZWIR_IPv6Address_t LinkLocalAdr;
 ZWIR_SocketHandle_t SocketReceive = NULL;
 
@@ -32,7 +34,7 @@ void onSocketData( uint8_t*  data, uint16_t  size ); //callback function prototy
 void PrintIPv6(ZWIR_IPv6Address_t* addr) {
 	sprintf(buf, IPV6FRMT2, IPV6VALUE(*addr));
 	ZWIR_UART1_Send(buf, strlen(buf));
-	ZWIR_UART1_Send("\r\n",2);
+	uart_puts("\r\n");
 }
 
 void ZWIR_AppInitHardware ( ZWIR_ResetReason_t   reason )
@@ -58,6 +60,7 @@ void ZWIR_AppInitNetworkDone ( ZWIR_ResetReason_t   reason )
 //Print IPv6 address on uart1
 	ZWIR_GetIPv6Addresses(&LinkLocalAdr, 1); //link local IPv6 Address of this ZWIR Module
 	sprintf(buf, "- Lobaro 6LoWPAN!\r\n- LinkLocal IPv6: ");
+	uart_puts(buf);
 	PrintIPv6(&LinkLocalAdr);
 
 //Open UDP6 Receive Socket on UDP port 5684
@@ -66,10 +69,10 @@ void ZWIR_AppInitNetworkDone ( ZWIR_ResetReason_t   reason )
 
 	if(SocketReceive) {
 		sprintf(buf, "- UDP6 RX Socket on port 5684 open!\r\n");
-		ZWIR_UART1_Send(buf, strlen(buf));
+		uart_puts(buf);
 	} else {
 		sprintf(buf, "- Error opening UDP6 RX Socket!\r\n");
-		ZWIR_UART1_Send(buf, strlen(buf));
+		uart_puts(buf);
 	}
 
 }
@@ -81,13 +84,15 @@ void onSocketData( uint8_t*  data, uint16_t  size ){
 
 //Info
 	sprintf(buf, "- Received %d bytes on local port 5684 from remote port %u of host: ", size, senderPort);
-	ZWIR_UART1_Send(buf, strlen(buf));
+	uart_puts(buf);
+
 	PrintIPv6(senderAddr);
 	sprintf(buf, "- Payload: \"");
-	ZWIR_UART1_Send(buf, strlen(buf));
+
 	ZWIR_UART1_Send(data, size); //simply forward data to uart1
+
 	sprintf(buf, "\"\r\n");
-	ZWIR_UART1_Send(buf, strlen(buf));
+	uart_puts(buf);
 
 //Echo received data to remote host
 //avoid ZWIR_SendUDP2 because we want to set the local port of response to
@@ -96,10 +101,10 @@ void onSocketData( uint8_t*  data, uint16_t  size ){
 
 	if(ZWIR_SendUDP(SocketTransmit,"Lobaro OK!",10)  == 0) {
 		sprintf(buf, "- send response ERROR\r\n\r\n");
-		ZWIR_UART1_Send(buf, strlen(buf));
+		uart_puts(buf);
 	} else {
 		sprintf(buf, "- send response OK\r\n\r\n");
-		ZWIR_UART1_Send(buf, strlen(buf));
+		uart_puts(buf);
 	}
 	ZWIR_CloseSocket(SocketTransmit);
 }
@@ -108,9 +113,8 @@ void onSocketData( uint8_t*  data, uint16_t  size ){
 void ZWIR_Main1000ms ( void )
 {
 	static uint32_t cnt = 0;
-
 	sprintf(buf, "\r\nSeconds since power up: %lu\r\n", cnt++);
-	ZWIR_UART1_Send(buf, strlen(buf));
+	uart_puts(buf);
 }
 
 /*
@@ -119,3 +123,18 @@ void ZWIR_Main100ms ( void )
 
 }
 */
+
+//send routine waits for data fully transmitted
+void uart_puts (char *s)
+{
+	while(!ZWIR_UART1_IsTXEmpty());
+	while (*s)
+    {
+        while(ZWIR_UART1_GetAvailableTXBuffer()==0);
+        ZWIR_UART1_SendByte(*s);
+        s++;
+    }
+    while(!ZWIR_UART1_IsTXEmpty());
+}
+
+
