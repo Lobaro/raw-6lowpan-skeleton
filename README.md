@@ -18,6 +18,7 @@ Please visit "http://www.lobaro.com" for complete solutions based on the "constr
 
 ###1. Install free GCC ARM Toolchain|Compiler
   * [https://launchpad.net/gcc-arm-embedded toolchain](https://launchpad.net/gcc-arm-embedded toolchain)
+  
 ###2. Install IDE Enviroment
   * Option A: CooCox IDE 1.7.8 (Win only)  [http://www.coocox.org](http://www.coocox.org)
   * Option B: "Eclipse IDE for C/C++ Developers" (Mars)  [Free Download](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/marsr) with "GNU ARM Eclipse" Plugin  [Free Download](http://gnuarmeclipse.github.io/)
