@@ -14,13 +14,28 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/src/main.c" title="main.c" tooltip="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Lobaro-6LoWPAN-Skeleton/src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1168" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3569" selectionTopPixel="1160"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ZWIR45xx-UART1.h" partName="ZWIR45xx-UART1.h" path="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART1.h" title="ZWIR45xx-UART1.h" tooltip="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART1.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Lobaro-6LoWPAN-Skeleton/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART1.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="34" selectionOffset="107" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f10x.h" partName="system_stm32f10x.h" path="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h" title="system_stm32f10x.h" tooltip="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="787"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x.h" partName="stm32f10x.h" path="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h" title="stm32f10x.h" tooltip="C:/Users/Tobias/Dropbox/Lobaro/Entwicklung/Software_Design/fw/raw-6lowpan-skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="633250" selectionTopPixel="140593"/>
 </editor>
 </editors>
 <views>
@@ -31,10 +46,14 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Lobaro-6LoWPAN-Skeleton"/>
+<element path="/Lobaro-6LoWPAN-Skeleton/ext_libs"/>
+<element path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS"/>
+<element path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/Documentation"/>
+<element path="/Lobaro-6LoWPAN-Skeleton/ext_libs/STM32F10x_StdPeriph_Driver"/>
 <element path="/Lobaro-6LoWPAN-Skeleton/src"/>
 </expanded>
 <selection>
-<element path="/Lobaro-6LoWPAN-Skeleton/src/main.c"/>
+<element path="/Lobaro-6LoWPAN-Skeleton/ext_libs/STM32F10x_StdPeriph_Driver"/>
 </selection>
 </viewState>
 </view>
@@ -251,55 +270,23 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-IPSec.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-RawSDK-Skeleton/src/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-6LoWPAN-Skeleton/src/main.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-6LoWPAN-Skeleton/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART1.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-6LoWPAN-Skeleton/src/main.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1320" y="0"/>
-</item>
-<item historyLabel="ZWIR45xx-6LoWPAN.h" index="2">
-<position info="not_deleted" x="3068" y="5"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1320" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1155" y="0"/>
-</item>
-<item historyLabel="ZWIR45xx-6LoWPAN.h" index="2">
-<position info="not_deleted" x="25396" y="50"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3122" y="27"/>
-</item>
-<item historyLabel="ZWIR45xx-6LoWPAN.h" index="2">
-<position info="not_deleted" x="25419" y="27"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3122" y="27"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3150" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3360" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2619" y="54"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2265" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3384" y="70"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4216" y="62"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4185" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1364" y="0"/>
-</item>
 <item historyLabel="ZWIR45xx-6LoWPAN.h" index="2">
 <position info="not_deleted" x="25946" y="24"/>
 </item>
@@ -399,8 +386,42 @@
 <item historyLabel="main.c" index="5">
 <position info="not_deleted" x="177" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="6">
+<item historyLabel="main.c" index="6">
 <position info="not_deleted" x="177" y="0"/>
+</item>
+<item historyLabel="Configuration" index="7"/>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="1168" y="0"/>
+</item>
+<item historyLabel="Configuration" index="7"/>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="1168" y="0"/>
+</item>
+<item historyLabel="Configuration" index="8"/>
+<item historyLabel="main.c" index="6">
+<position info="not_deleted" x="1168" y="0"/>
+</item>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="ZWIR45xx-UART1.h" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="11">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="Configuration" index="12"/>
+<item historyLabel="system_stm32f10x.h" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32f10x.h" index="14">
+<position info="not_deleted" x="633250" y="16"/>
+</item>
+<item historyLabel="Configuration" index="12"/>
+<item historyLabel="main.c" index="11">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="Configuration" index="12"/>
+<item active="true" historyLabel="main.c" index="11">
+<position info="not_deleted" x="211" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -409,50 +430,50 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ZWIR45xx-IPSec.h" tooltip="Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-IPSec.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-IPSec.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x.h" tooltip="Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h">
+<persistable path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemInPlaceEditor" name="ZWIR451x_ProgGuide_Rev_1_90.pdf" tooltip="Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/doc/ZWIR451x_ProgGuide_Rev_1_90.pdf">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/doc/ZWIR451x_ProgGuide_Rev_1_90.pdf"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f10x.h" tooltip="Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h">
+<persistable path="/Lobaro-6LoWPAN-Skeleton/ext_libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ZWIR45xx-6LoWPAN.h" tooltip="Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-6LoWPAN.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-6LoWPAN.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="modbus_rs485.c" tooltip="Lobaro-Zwir4512/src/lobaro/apps/Modbus_RS485/modbus_rs485.c">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/apps/Modbus_RS485/modbus_rs485.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ZWIR45xx-UART1.h" tooltip="Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART1.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART1.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.c" tooltip="Lobaro-Zwir4512/src/lobaro/hal/uart/uart.c">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/hal/uart/uart.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ZWIR45xx-UART2.h" tooltip="Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART2.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/ext_libs/ZWIR45xx_Stack/include/ZWIR45xx-UART2.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lobaro_hal.c" tooltip="Lobaro-Zwir4512/src/lobaro/hal/lobaro_hal.c">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/hal/lobaro_hal.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lobaro_hal_ext.h" tooltip="Lobaro-Zwir4512-AppTemplate/ext_libs/lobaro_hal_ext.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/ext_libs/lobaro_hal_ext.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x.h" tooltip="Lobaro-Zwir4512/libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h">
+<persistable path="/Lobaro-Zwir4512/libs/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Lobaro-Zwir4512-AppTemplate/src/main.c">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/src/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Lobaro-Zwir4512/src/main.c">
+<persistable path="/Lobaro-Zwir4512/src/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lobaro_hal_ext.h" tooltip="Lobaro-Zwir4512-AppTemplate/lib-lobaro-hal-zwir4512/ext_libs/lobaro_hal_ext.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/lib-lobaro-hal-zwir4512/ext_libs/lobaro_hal_ext.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_usart.c" tooltip="Lobaro-Zwir4512/libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c">
+<persistable path="/Lobaro-Zwir4512/libs/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lobaro.h" tooltip="Lobaro-Zwir4512-AppTemplate/lib-lobaro/lobaro.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/lib-lobaro/lobaro.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_conf.h" tooltip="Lobaro-Zwir4512/libs/STM32F10x_StdPeriph_Driver/stm32f10x_conf.h">
+<persistable path="/Lobaro-Zwir4512/libs/STM32F10x_StdPeriph_Driver/stm32f10x_conf.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="resources.h" tooltip="Lobaro-Zwir4512-AppTemplate/src/resources/resources.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/src/resources/resources.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="uart.h" tooltip="Lobaro-Zwir4512/src/lobaro/hal/uart/uart.h">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/hal/uart/uart.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coap_options.h" tooltip="Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/coap_options.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/coap_options.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lobaro_hal.h" tooltip="Lobaro-Zwir4512/src/lobaro/hal/lobaro_hal.h">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/hal/lobaro_hal.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coap_resources.h" tooltip="Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/coap_resources.h">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/coap_resources.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="network.c" tooltip="Lobaro-Zwir4512/src/lobaro/hal/network/network.c">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/hal/network/network.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="resources.c" tooltip="Lobaro-Zwir4512-AppTemplate/src/resources/resources.c">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/src/resources/resources.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="modbus_rs485.h" tooltip="Lobaro-Zwir4512/src/lobaro/apps/Modbus_RS485/modbus_rs485.h">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/apps/Modbus_RS485/modbus_rs485.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coap_option_blockwise.c" tooltip="Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/option-types/coap_option_blockwise.c">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/option-types/coap_option_blockwise.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lobaro.h" tooltip="Lobaro-Zwir4512/src/lobaro/lobaro.h">
+<persistable path="/Lobaro-Zwir4512/src/lobaro/lobaro.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="coap_resources.c" tooltip="Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/coap_resources.c">
-<persistable path="/Lobaro-Zwir4512-AppTemplate/lib-lobaro/stacks/coap/coap_resources.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f10x_usart.h" tooltip="Lobaro-Zwir4512/libs/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h">
+<persistable path="/Lobaro-Zwir4512/libs/STM32F10x_StdPeriph_Driver/inc/stm32f10x_usart.h"/>
 </file>
 </mruList>
 </workbench>
